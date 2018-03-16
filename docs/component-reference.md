@@ -6,29 +6,29 @@
 
 This component will render a list of rules. If a shopper is logged in, the rules will be actionable and, when clicked on, will open a modal with additional information or actions (e.g. enter birthday)
 
-Example:
-
-![rules list](https://d.pr/i/weRgL7.png)
-
 Code:
 
 ```html
 <div data-lion-rules-list></div>
 ```
 
+Example:
+
+![rules list](https://d.pr/i/weRgL7.png)
+
 ### Rewards list
 
 This component will render a list of rewards. If a shopper is logged in, the rewards will have a "Redeem" button that can be clicked to open the claim reward modal.
-
-Example:
-
-![rewards list](https://d.pr/i/pX2Yom.png)
 
 Code:
 
 ```html
 <div data-lion-rewards-list></div>
 ```
+
+Example:
+
+![rewards list](https://d.pr/i/pX2Yom.png)
 
 ### Claimed rewards list
 
