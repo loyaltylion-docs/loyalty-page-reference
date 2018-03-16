@@ -64,9 +64,16 @@ Many actions in LoyaltyLion will trigger a modal. The modal we render will alway
 
 ### Rule modal
 
+![rule modal](https://d.pr/i/GBmEy5.png)
+
 ### Redeem reward modal
+
+![redeem modal](https://d.pr/i/VwmYlz.png)
 
 ### Claimed reward modal
 
+![claimed reward modal](https://d.pr/i/zGOJow.png)
+
 ### History info modal
 
+![history info modal](https://d.pr/i/TOP2ie.png)
