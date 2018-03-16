@@ -1,0 +1,175 @@
+<style type='text/css'>
+  .rewards-banner img {
+    max-width: 100%;
+  }
+
+  .signup-banner {
+    border: 2px solid #555;
+    text-align: center;
+    padding: 40px 0;
+    max-width: 600px;
+  }
+
+  .signup-banner__text {
+    font-size: 30px;
+    margin-bottom: 25px;
+  }
+
+  .signup-banner__join-button {
+    display: inline-block;
+    color: #fff;
+    background-color: #222;
+    padding: 10px 15px;
+    font-size: 20px;
+  }
+
+  .signup-banner__already-member {
+    margin-top: 25px;
+  }
+
+  .loyaltylion-page__signup-banner-top {
+    margin: 0 auto 50px auto;
+  }
+
+  .loyaltylion-page__signup-banner-bottom {
+    margin: 50px auto 50px auto;
+  }
+
+  .loyaltylion-page {
+    padding: 50px 0;
+  }
+
+  .loyaltylion-page h2 {
+    font-size: 30px;
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .loyaltylion-page h3 {
+    text-align: center;
+    font-weight: 400;
+  }
+
+  .loyaltylion-page h3:after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 2px;
+    margin: 20px auto;
+    background: #555;
+  }
+
+  .loyaltylion-page__welcome {
+    text-align: center;
+    border: 2px solid #555;
+    max-width: 600px;
+    padding: 35px 0;
+    margin: 0 auto 60px auto;
+  }
+
+  .loyaltylion-page__points span {
+    font-weight: bold;
+    color: #000;
+  }
+
+  .loyalty-page__earn {
+    margin-bottom: 60px;
+  }
+
+  .loyalty-page__claimed-rewards {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+
+  /* overrides of default loyaltylion css */
+
+  .lion-loyalty-page-reward-item__content {
+    background-color: #fcfcfc;
+    box-shadow: none;
+    border: 1px solid #888;
+  }
+
+  .lion-loyalty-page-rule-item__icon {
+    filter: grayscale(100%);
+  }
+
+  .lion-loyalty-page-rule-item__content {
+    background-color: #fcfcfc;
+    box-shadow: none;
+    border: 1px solid #888;
+  }
+
+  .lion-loyalty-page-rule-item--actionable:hover .lion-loyalty-page-rule-item__icon {
+    filter: grayscale(0);
+  }
+
+  .lion-loyalty-page-rule-item__points {
+    background-color: #f7f7f7;
+  }
+
+  .lion-loyalty-page-claimed-rewards__list--empty {
+    text-align: center;
+  }
+
+  .lion-referral-widget-modal {
+    max-width: 600px;
+  }
+</style>
+
+<div class='rewards-banner'>
+  <img src='https://cdn.shopify.com/s/files/1/1186/0010/t/10/assets/loyalty-program.png?1220273690900553824' />
+</div>
+
+<div class="page-width">
+  <div class="loyaltylion-page">
+    {% unless customer %}
+      <div class='signup-banner loyaltylion-page__signup-banner-top'>
+        <div class='signup-banner__text'>Join today and get <span data-lion-points-for-rule='signup'></span> points</div>
+        <a href='/account/register' class='signup-banner__join-button'>Join our rewards program</a>
+        <p class='signup-banner__already-member'>Already a member? <a href='/account/login'>Log in</a></p>
+      </div>
+    {% endunless %}
+
+    {% if customer %}
+      <div class='loyaltylion-page__welcome'>
+        <h2>Welcome back, {{ customer.first_name }}</h2>
+        <div class='loyaltylion-page__points'>
+          You have <span data-lion-points='approved'></span> points
+        </div>
+        <div class='loyaltylion-page__pending-points'>
+          (<span data-lion-points='pending'></span> pending)
+        </div>
+      </div>
+    {% endif %}
+
+    <div class='loyalty-page__earn'>
+      <h3>Earn points</h3>
+      <div data-lion-rules-list></div>
+    </div>
+
+    <div class='loyalty-page__redeem'>
+      <h3>Redeem rewards</h3>
+      <div data-lion-rewards-list></div>
+    </div>
+
+    {% if customer %}
+      <div class='loyalty-page__claimed-rewards'>
+        <h3>Your rewards</h3>
+        <div data-lion-claimed-rewards-list></div>
+      </div>
+
+      <div class='loyalty-page__history'>
+        <h3>History</h3>
+        <div data-lion-activity-history></div>
+      </div>
+    {% endif %}
+
+    {% unless customer %}
+      <div class='signup-banner loyaltylion-page__signup-banner-bottom'>
+        <div class='signup-banner__text'>Join today and get <span data-lion-points-for-rule='signup'></span> points</div>
+        <a href='/account/register' class='signup-banner__join-button'>Join our rewards program</a>
+        <p class='signup-banner__already-member'>Already a member? <a href='/account/login'>Log in</a></p>
+      </div>
+    {% endunless %}
+  </div>
+</div>
