@@ -108,3 +108,19 @@ Many actions in LoyaltyLion will trigger a modal. The modal we render will alway
 ### History info modal
 
 ![history info modal](https://d.pr/i/TOP2ie.png)
+
+### Refer-a-friend modal
+
+Displayed when the "Refer friends" rule is clicked when a customer is logged in.
+
+![refer-a-friend modal](https://d.pr/i/KHGHAz.png)
+
+### Referee welcome modal
+
+![referee welcome modal](https://d.pr/i/SWrfHy.png)
+
+## Miscellaneous
+
+### Notifications
+
+![welcome notification](https://d.pr/i/fGbShR.png)
