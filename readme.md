@@ -6,7 +6,7 @@ This repository contains a reference Shopify theme with LoyaltyLion's on-page in
 
 https://loyaltylion-reference-8b64.myshopify.com
 
-* access the rewards page from the "Rewards" menu in the top, or by going to https://loyaltylion-reference-8b64.myshopify.com/pages/rewards
+* access the rewards page from the "Rewards" menu in the top
 
 ## Adding a loyalty page to your theme
 
@@ -29,7 +29,7 @@ The page template should consist of:
 * your own markup, e.g. images, headings, etc
 * individually placed LoyaltyLion UI components, such as a list of rewards
 
-The components available, and how to add them, are detailed in the (component reference)[https://github.com/loyaltylion-docs/loyalty-page-v2/docs/component-reference]
+The components available, and how to add them, are detailed in the (component reference)[https://github.com/loyaltylion-docs/loyalty-page-reference/blob/master/docs/component-reference.md]
 
 ### 4. Style the LoyaltyLion UI components as needed
 
