@@ -1,6 +1,37 @@
 # LoyaltyLion UI component reference
 
-## Embeddable components
+## Simple components
+
+### Customer points
+
+You can render the customer's current points using the following elements:
+
+```html
+<!-- customer's total (approved + pending) points -->
+<span data-lion-points></span>
+
+<!-- customer's approved (redeemable) points -->
+<span data-lion-points='approved'></span>
+
+<!-- customer's pending points -->
+<span data-lion-points='pending'></span>
+
+<!-- customer's spent points -->
+<span data-lion-points='spent'></span>
+
+<!-- customer's lifetime (approved + pending + spent) points -->
+<span data-lion-points='lifetime'></span>
+```
+
+### Signup points
+
+You can render the number of points given for signups with the following element:
+
+```html
+<span data-lion-points-for='signup'></div>
+```
+
+## Complex components
 
 ### Rules list
 
