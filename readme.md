@@ -29,7 +29,7 @@ The page template should consist of:
 * your own markup, e.g. images, headings, etc
 * individually placed LoyaltyLion UI components, such as a list of rewards
 
-The components available, and how to add them, are detailed in the [component reference](https://github.com/loyaltylion-docs/loyalty-page-reference/blob/master/docs/component-reference.md)
+The components available, and how to add them, are detailed in our [developer portal](https://developers.loyaltylion.com/sdk/overview)
 
 ### 4. Style the LoyaltyLion UI components as needed
 
